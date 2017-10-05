@@ -1,94 +1,108 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    background: #ddd;
-    overflow-x: hidden;
+	background: lightgray;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+h2, h3 {
+	color: black;
+	text-align: center;	
 }
 
 @media screen and (min-width: 801px) {
-    .gallery {
-        position: absolute;
-        width: 90%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+	.gallery {
+		position: absolute;
+		width: 90%;
+		max-width: 1200px;
+		margin-top: 180px;
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
-.photo {
-    width: 20%;
-    position: relative;
-    background: white;
-    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0, 0, 0, 0.25);
-    float: left;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    border-radius: 3px;
-    padding: 10px 10px 10px 10px;
-    transition: all 100ms ease-out;
-    transform: translateZ(0);
+.polaroid {
+	width: 20%;
+	position: relative;
+	background: white;
+	box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
+		0px 5px 10px rgba(0, 0, 0, 0.25);
+	float: left;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	border-radius: 3px;
+	padding: 10px 10px 10px 10px;
+	transition: all 100ms ease-out;
+	transform: translateZ(0);
 }
 
-.photo img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    position: relative;
+.polaroid img {
+	width: 100%;
+	height: auto;
+	max-width: 300px;
+	max-height: 300px;
+	position: relative;
 }
 
-.photo figcaption {
-    margin-top: 10px;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1;
-    color: black;
+.polaroid figcaption {
+	margin-top: 10px;
+	font-family: "Shadows Into Light", cursive;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	color: black;
 }
 
 @media screen and (max-width: 400px) {
-    .photo {
-        width: 90%;
-        transform: rotateZ(0deg) !important;
-        margin: 20px auto 0 auto;
-        float: none;
-    }
+	.polaroid {
+		width: 90%;
+		transform: rotateZ(0deg) !important;
+		margin: 20px auto 0 auto;
+		float: none;
+	}
 }
 
 @media screen and (min-width: 401px) {
-    .photo:hover {
-        transform: rotateZ(0deg) scale(1.2) !important;
-        z-index: 257 !important;
-        box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1), 0px 0px 29px rgba(0, 0, 0, 0.2);
-    }
+	.polaroid:hover {
+		transform: rotateZ(0deg) scale(1.2) !important;
+		z-index: 257 !important;
+		box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
+			0px 0px 29px rgba(0, 0, 0, 0.2);
+	}
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
-    .photo {
-        width: 50%;
-    }
+	.polaroid {
+		width: 50%;
+	}
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
-    .photo {
-        width: 33.3333%;
-    }
+	.polaroid {
+		width: 33.3333%;
+	}
 }
 
 @media screen and (min-width: 801px) and (max-width: 1000px) {
-    .photo {
-        width: 25%;
-    }
+	.polaroid {
+		width: 25%;
+	}
 }
 
 @media screen and (min-width: 1001px) {
-    .photo {
-        width: 20%;
-    }
+	.polaroid {
+		width: 20%;
+	}
 }
