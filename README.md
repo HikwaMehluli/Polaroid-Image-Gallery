@@ -1,3 +1,5 @@
 # Polaroid-Image-Gallery
-Polorid Image Gallery is a simple image gallery HTML/CSS display
-Currently it requres jQuery but in the future shall be in vanilla script.
+Polaroid Image Gallery - is a simple image gallery. HTML/CSS display
+Currently it requres jQuery but in the future shall be with vanilla javascript.
+
+[View Example](https://hikwamehluli.github.io/Polaroid-Image-Gallery/)
