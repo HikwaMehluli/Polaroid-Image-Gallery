@@ -9,7 +9,3 @@ Currently it requres jQuery but in the future shall be with vanilla javascript.
 jQuery 2.1.3
 
 [Get JQuery here](http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js)
-
-```
-Give examples
-```
