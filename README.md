@@ -7,8 +7,4 @@ Currently it requres jQuery but in the future shall be with vanilla javascript.
 
 ### Dependencies
 
-jQuery 2.1.3
-
-[Get JQuery here](http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js)
-=======
->>>>>>> f6137410beb011d402847ba8605d04d01f9545d3
+jQuery 2.1.3 [Download JQuery](http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js)
