@@ -1,6 +1,7 @@
 # Polaroid-Image-Gallery
 Polaroid Image Gallery - is a simple image gallery. HTML/CSS display
 Currently it requres jQuery but in the future shall be with vanilla javascript.
+[View Example](https://hikwamehluli.github.io/Polaroid-Image-Gallery/)
 
 ### HTML Layout
 ```
@@ -11,6 +12,7 @@ Currently it requres jQuery but in the future shall be with vanilla javascript.
   </figure>
 </div>
 ```
+
 ### JQUERY Snippet
 ```
 jQuery(function($) {
@@ -24,8 +26,6 @@ jQuery(function($) {
     });
 });
 ```
-
-[View Example](https://hikwamehluli.github.io/Polaroid-Image-Gallery/)
 
 ### Dependencies
 
