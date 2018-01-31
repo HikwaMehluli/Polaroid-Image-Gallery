@@ -4,7 +4,7 @@ Currently it requres jQuery but in the future shall be with vanilla javascript.
 [View Example](https://hikwamehluli.github.io/Polaroid-Image-Gallery/)
 
 ### HTML Layout
-```
+```html
 <div class="gallery">
   <figure class="polaroid">
     <img src="#" alt=" "/>
@@ -14,7 +14,7 @@ Currently it requres jQuery but in the future shall be with vanilla javascript.
 ```
 
 ### JQUERY Snippet
-```
+```javascript
 jQuery(function($) {
   $('.polaroid').each(function() {
     var depth = Math.floor(Math.random() * 256);
