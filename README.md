@@ -30,3 +30,5 @@ jQuery(function($) {
 ### Dependencies
 
 JQuery 2.1.3 [Download JQuery](http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js)
+<br>
+Font family for polaroid caption - [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light)
