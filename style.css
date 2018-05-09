@@ -1,113 +1,152 @@
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	background: #f7f7f7;
-	font-family: 'Roboto', sans-serif;
-	overflow-x: hidden;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
+    background: #f7f7f7 url('img/carpet.jpg');
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
 }
 
-h2, h3 {
-	color: black;
-	text-align: center;	
+h2 {
+    font-size: 3rem;
 }
-.gallery a {
-    text-decoration: none;
+
+h3 {
+    font-size: 2rem;
+}
+
+h2,
+h3 {
+    color: white;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 0 1px 0 rgb(204, 204, 204), 0 2px 0 rgb(201, 201, 201), 0 3px 0 rgb(187, 187, 187), 0 4px 0 rgb(185, 185, 185), 0 5px 0 rgb(170, 170, 170), 0 6px 1px rgba(0, 0, 0, 0.0980392), 0 0 5px rgba(0, 0, 0, 0.0980392), 0 1px 3px rgba(0, 0, 0, 0.298039), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.247059), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.14902);
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 header {
     margin-bottom: 7%;
 }
 
-@media screen and (min-width: 801px) {
-	.gallery {
-		position: relative;
-		width: 90%;
-		max-width: 1200px;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
+header a {
+    color: white;
+    border-bottom: 5px solid #005fce;
+    border-top: 5px solid #005fce;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+header a:hover {
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
+header a,
+.gallery a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 801px) {
+    .gallery {
+        position: relative;
+        width: 90%;
+        max-width: 1200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/**********************
+    Poloraid Code
+**********************/
+
 .polaroid {
-	width: 20%;
-	position: relative;
-	background: white;
-	box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
-                0px 5px 10px rgba(0, 0, 0, 0.25);
-	float: left;
-	margin-top: 0;
-	margin-right: 0;
-	margin-bottom: 0;
-	margin-left: 0;
-	border-radius: 3px;
-	padding: 10px 10px 10px 10px;
-	transition: all 100ms ease-out;
-	transform: translateZ(0);
+    width: 20%;
+    position: relative;
+    background: white;
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
+    0px 5px 10px rgba(0, 0, 0, 0.25);
+    float: left;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    transition: all 100ms ease-out;
+    transform: translateZ(0);
 }
 
 .polaroid img {
-	width: 100%;
-	height: auto;
-	max-width: 300px;
-	max-height: 300px;
-	position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
 }
 
 .polaroid figcaption {
-	margin-top: 10px;
-	font-family: "Shadows Into Light", cursive;
-	font-size: 24px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 1;
-	color: black;
+    margin-top: 10px;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    color: black;
 }
 
 @media screen and (max-width: 400px) {
-	.polaroid {
-		width: 90%;
-		transform: rotateZ(0deg) !important;
-		margin: 20px auto 0 auto;
-		float: none;
-	}
+    .polaroid {
+        width: 90%;
+        transform: rotateZ(0deg) !important;
+        margin: 20px auto 0 auto;
+        float: none;
+    }
 }
 
 @media screen and (min-width: 401px) {
-	.polaroid:hover {
-		transform: rotateZ(0deg) scale(1.2) !important;
-		z-index: 257 !important;
-		box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
-			0px 0px 29px rgba(0, 0, 0, 0.2);
-	}
+    .polaroid:hover {
+        transform: rotateZ(0deg) scale(1.2) !important;
+        z-index: 257 !important;
+        box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
+        0px 0px 29px rgba(0, 0, 0, 0.2);
+    }
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
-	.polaroid {
-		width: 50%;A
-	}
+    .polaroid {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
-	.polaroid {
-		width: 33.3333%;
-	}
+    .polaroid {
+        width: 33.3333%;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1000px) {
-	.polaroid {
-		width: 25%;
-	}
+    .polaroid {
+        width: 25%;
+    }
 }
 
 @media screen and (min-width: 1001px) {
-	.polaroid {
-		width: 20%;
-	}
+    .polaroid {
+        width: 20%;
+    }
 }
