@@ -11,7 +11,7 @@ Currently it requres jQuery but in the future shall be with vanilla javascript.
 ```html
 <div class="gallery">
   <figure class="polaroid">
-    <img src="#" alt=" "/>
+    <img src="path/to/your/image" alt=" "/>
     <figcaption>Caption or Name</figcaption>
   </figure>
 </div>
