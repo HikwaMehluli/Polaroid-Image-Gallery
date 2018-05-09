@@ -5,7 +5,7 @@
 }
 
 body {
-	background: lightgray;
+	background: #f7f7f7;
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
 	margin: 0 auto;
@@ -17,14 +17,19 @@ h2, h3 {
 	color: black;
 	text-align: center;	
 }
+.gallery a {
+    text-decoration: none;
+}
+
+header {
+    margin-bottom: 7%;
+}
 
 @media screen and (min-width: 801px) {
 	.gallery {
-		position: absolute;
+		position: relative;
 		width: 90%;
 		max-width: 1200px;
-		margin-top: 180px;
-		top: 20%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
@@ -35,7 +40,7 @@ h2, h3 {
 	position: relative;
 	background: white;
 	box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
-		0px 5px 10px rgba(0, 0, 0, 0.25);
+                0px 5px 10px rgba(0, 0, 0, 0.25);
 	float: left;
 	margin-top: 0;
 	margin-right: 0;
@@ -85,7 +90,7 @@ h2, h3 {
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
 	.polaroid {
-		width: 50%;
+		width: 50%;A
 	}
 }
 
@@ -105,8 +110,4 @@ h2, h3 {
 	.polaroid {
 		width: 20%;
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f6137410beb011d402847ba8605d04d01f9545d3
