@@ -1,9 +1,9 @@
 # Polaroid-Image-Gallery
 Polaroid Image Gallery - is a simple image gallery.
 Currently it requres jQuery but in the future shall be with vanilla javascript.
+
 [View Example](https://hikwamehluli.github.io/Polaroid-Image-Gallery/)
 
-### HTML - Dynamic Layout, powered by json
 Create HTML like this and the rest will be handled by the script/s
 ```html
 <div class="gallery">
@@ -37,4 +37,5 @@ Before the body closing tag add the following scripts
 JQuery 2.1.3 [Download JQuery](http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js)
 <br>
 Font family for polaroid caption - [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light)
+
 
