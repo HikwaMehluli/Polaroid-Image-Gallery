@@ -1,42 +1,41 @@
-var imageData = [
-    {
-        caption: "Chameleon",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/b2099be08ad6d49e9c580a56204479e3/5BECB55C/t51.2885-15/sh0.08/e35/s750x750/29415658_416568055437033_3392759172947771392_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "Dung beetles",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/957b645e64616306b169b4fd7b047773/5BC7CE57/t51.2885-15/sh0.08/e35/s750x750/29739066_216072715641425_1997906283725848576_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "Gorilla",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/879a059606b1188a06df8cff067d6d38/5BE11357/t51.2885-15/e35/30077035_1331516383646194_704559148339036160_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "Hyena",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/ad7ed635f41aae7cad0fb7808efe0f59/5BC944BA/t51.2885-15/sh0.08/e35/s750x750/30087216_942816025896929_4097998206019829760_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "King Fisher",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/d04b3d89d1b496262536a1eb37076159/5BEB6A7B/t51.2885-15/sh0.08/e35/s750x750/30078868_1979456435701975_8637702281963241472_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "Meerkats",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/75ff02770a580346872bc7748cc2a8c0/5BC5D650/t51.2885-15/sh0.08/e35/s750x750/30087856_174017453255303_4110648508204187648_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "Pangolin",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/1348038da555a59cceb4301d32697ae1/5BC79242/t51.2885-15/e35/30591109_594750527545980_692196896726319104_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "Queen Bee",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/e16189d144f78e31001836f234a57fcd/5BD49285/t51.2885-15/e35/30085104_164316777587280_3961554911866388480_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "Rhinoceros",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/29c5c3ee5a63ceac9d4e1f53d0f08775/5BC82DCD/t51.2885-15/e35/30592654_237355893491952_30113527540744192_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  },
-    {
-        caption: "Snake",
-        photo: "https://instagram.fjnb3-1.fna.fbcdn.net/vp/6a97c8d41075eaccaa491a3290304439/5BD5E8C1/t51.2885-15/e35/30829640_537496763310749_1727967279934603264_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9"
-  }
+var imageGalleryData = [{
+		caption: "Chameleon",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788727/36days_2018/36days_C_2018.jpg"
+	},
+	{
+		caption: "Dung beetles",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788723/36days_2018/36days_D_2018.jpg"
+	},
+	{
+		caption: "Gorilla",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788725/36days_2018/36days_G_2018.jpg"
+	},
+	{
+		caption: "Hyena",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788730/36days_2018/36days_H_2018.jpg"
+	},
+	{
+		caption: "King Fisher",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788727/36days_2018/36days_K_2018.jpg"
+	},
+	{
+		caption: "Meerkats",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788737/36days_2018/36days_M_2018.jpg"
+	},
+	{
+		caption: "Pangolin",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788733/36days_2018/36days_P_2018.jpg"
+	},
+	{
+		caption: "Queen Bee",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788736/36days_2018/36days_Q_2018.jpg"
+	},
+	{
+		caption: "Rhinoceros",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788736/36days_2018/36days_R_2018.jpg"
+	},
+	{
+		caption: "Snake",
+		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788737/36days_2018/36days_S_2018.jpg"
+	}
 ];
