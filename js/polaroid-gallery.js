@@ -1,13 +1,15 @@
 // PLACING OF IMAGES INTO HTML
-function imageTemplate(art) {
+function galleryTemplate(art) {
     return `
-    <figure class="polaroid">
-        <img src="${art.photo}">
-        <figcaption>${art.caption}</figcaption>
-    </figure>
+    <div class="gallery">
+        <figure class="polaroid">
+            <img src="${art.photo}">
+            <figcaption>${art.caption}</figcaption>
+        </figure>
+    </div>
   `;
 }
-document.getElementById("app").innerHTML = imageData.map(imageTemplate).join("");
+document.getElementById("app").innerHTML = imageGalleryData.map(galleryTemplate).join("");
 
 // RANDOM LAYOUT OF POLAROID IMAGES
 $('.polaroid').each(function () {
@@ -20,4 +22,4 @@ $('.polaroid').each(function () {
 });
 
 // CREDITS
-console.log('%cPolaroid Image Gallery\n\nProduced & Developed by: Mehluli Hikwa\n\nInstagram - @thatafro\n\nTwitter - @HikwaMehluli\n\n(C) thatAfro - 2018', 'color: green; font-weight: bold;');
+console.log('%cPolaroid Image Gallery\n\nProduced & Developed by: Mehluli Hikwa\n\nInstagram - @thatafro\n\nTwitter - @HikwaMehluli\n\n(C) thatAfro - 2019', 'color: green; font-weight: bold;');
