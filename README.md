@@ -1,4 +1,4 @@
-# Responsive Polaroid Image Gallery
+# Polaroid Image Gallery
 Responsive Polaroid Image Gallery - is a simple image gallery.
 Currently it requires jQuery but in the future shall be with vanilla JavaScript.
 
