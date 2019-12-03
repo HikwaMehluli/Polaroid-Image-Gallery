@@ -41,4 +41,4 @@ Font family for polaroid caption - [Shadows Into Light](https://fonts.google.com
 
 ### Share This Project
 
-[Tweet Project](https://twitter.com/home?status=Check%20out%20this%20cool%20Polaroid%20Image%20Gallery%20by%20%40HikwaMehluli%20%23javascript%20%23opensource%0A%0Ahttps%3A//goo.gl/5T11np) | [Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A//goo.gl/5T11np) | [Share on Google+](https://plus.google.com/share?url=https%3A//goo.gl/5T11np) | [Share on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https%3A//goo.gl/5T11np&title=Polaroid%20Image%20Gallery&summary=&source=)
+[Tweet Project](https://twitter.com/home?status=Check%20out%20this%20cool%20Polaroid%20Image%20Gallery%20by%20%40HikwaMehluli%20%23javascript%20%23opensource%0A%0Ahttps%3A//goo.gl/5T11np) | [Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A//goo.gl/5T11np) | [Share on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https%3A//goo.gl/5T11np&title=Polaroid%20Image%20Gallery&summary=&source=)

@@ -57,6 +57,7 @@ header a,
     padding: 10px 10px 10px 10px;
     transition: all 100ms ease-out;
     transform: translateZ(0);
+    z-index: 100;
 }
 
 .polaroid img {
@@ -89,7 +90,7 @@ header a,
 @media screen and (min-width: 401px) {
     .polaroid:hover {
         transform: rotateZ(0deg) scale(1.2) !important;
-        z-index: 257 !important;
+        z-index: 500;
         box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
         0px 0px 29px rgba(0, 0, 0, 0.2);
     }
