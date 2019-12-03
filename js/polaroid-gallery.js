@@ -13,7 +13,7 @@ document.getElementById("app").innerHTML = imageGalleryData.map(galleryTemplate)
 
 // RANDOM LAYOUT OF POLAROID IMAGES
 $('.polaroid').each(function () {
-    var depth = Math.floor(Math.random() * 256);
+    var depth = Math.floor(Math.random() * 100);
     var rotate = Math.random() * 41 - 15;
     $(this).css({
         'z-index': depth,
