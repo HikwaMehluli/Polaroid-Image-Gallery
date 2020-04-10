@@ -22,4 +22,4 @@ $('.polaroid').each(function () {
 });
 
 // CREDITS
-console.log('%cPolaroid Image Gallery\n\nProduced & Developed by: Mehluli Hikwa\n\nInstagram - @thatafro\n\nTwitter - @HikwaMehluli\n\n(C) thatAfro - 2019', 'color: green; font-weight: bold;');
+console.log('%cPolaroid Image Gallery\n\nDeveloped by: Mehluli Hikwa\n\nInstagram - @thatafro', 'color: blue; font-size: 14px; font-weight: bold;');
