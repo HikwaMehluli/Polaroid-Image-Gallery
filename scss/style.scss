@@ -24,45 +24,40 @@ header {
     }
 }
 
-header a,
-.gallery a {
-    text-decoration: none;
-}
 
-@media screen and (min-width: 801px) {
-    .gallery {
-        position: relative;
-        width: 90%;
-        max-width: 1200px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
 
 /**********************
     Poloraid Code
 **********************/
+.gallery {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .polaroid {
-    width: 20%;
+    // width: 100%;
     position: relative;
     background: white;
     box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
     0px 5px 10px rgba(0, 0, 0, 0.25);
     float: left;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin: 0;
     border-radius: 3px;
     padding: 10px 10px 10px 10px;
     transition: all 100ms ease-out;
     transform: translateZ(0);
 
+    &:hover {
+        transform: rotateZ(0deg) scale(1.2) !important;
+        z-index: 300 !important;
+    }
+
     img {
         width: 100%;
         height: auto;
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 250px;
+        max-height: 250px;
         position: relative;
     }
 
@@ -77,44 +72,44 @@ header a,
     }
 }
 
-@media screen and (max-width: 400px) {
-    .polaroid {
-        width: 90%;
-        transform: rotateZ(0deg) !important;
-        margin: 20px auto 0 auto;
-        float: none;
-    }
-}
+// @media screen and (max-width: 400px) {
+//     .polaroid {
+//         width: 90%;
+//         transform: rotateZ(0deg) !important;
+//         margin: 20px auto 0 auto;
+//         float: none;
+//     }
+// }
 
-@media screen and (min-width: 401px) {
-    .polaroid:hover {
-        transform: rotateZ(0deg) scale(1.2) !important;
-        z-index: 300 !important;
-        box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
-        0px 0px 29px rgba(0, 0, 0, 0.2);
-    }
-}
+// @media screen and (min-width: 401px) {
+//     .polaroid:hover {
+//         transform: rotateZ(0deg) scale(1.2) !important;
+//         z-index: 300 !important;
+//         box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
+//         0px 0px 29px rgba(0, 0, 0, 0.2);
+//     }
+// }
 
-@media screen and (min-width: 401px) and (max-width: 600px) {
-    .polaroid {
-        width: 50%;
-    }
-}
+// @media screen and (min-width: 401px) and (max-width: 600px) {
+//     .polaroid {
+//         width: 50%;
+//     }
+// }
 
-@media screen and (min-width: 601px) and (max-width: 800px) {
-    .polaroid {
-        width: 33.3333%;
-    }
-}
+// @media screen and (min-width: 601px) and (max-width: 800px) {
+//     .polaroid {
+//         width: 33.3333%;
+//     }
+// }
 
-@media screen and (min-width: 801px) and (max-width: 1000px) {
-    .polaroid {
-        width: 25%;
-    }
-}
+// @media screen and (min-width: 801px) and (max-width: 1000px) {
+//     .polaroid {
+//         width: 25%;
+//     }
+// }
 
-@media screen and (min-width: 1001px) {
-    .polaroid {
-        width: 20%;
-    }
-}
+// @media screen and (min-width: 1001px) {
+//     .polaroid {
+//         width: 20%;
+//     }
+// }
