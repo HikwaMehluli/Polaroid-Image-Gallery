@@ -1,4 +1,4 @@
-// PLACING OF IMAGES INTO HTML
+// Placing of images into HTML
 function galleryTemplate(art) {
     return `
     <div class="gallery">
@@ -11,7 +11,7 @@ function galleryTemplate(art) {
 }
 document.getElementById("app").innerHTML = imageGalleryData.map(galleryTemplate).join("");
 
-// RANDOM LAYOUT OF POLAROID IMAGES
+// Randomize polaroid images
 $('.polaroid').each(function () {
     var depth = Math.floor(Math.random() * 100);
     var rotate = Math.random() * 41 - 15;
@@ -21,5 +21,5 @@ $('.polaroid').each(function () {
     });
 });
 
-// CREDITS
+// Credits
 console.log('%cPolaroid Image Gallery\n\nDeveloped by: Mehluli Hikwa\n\nInstagram - @thatafro', 'color: blue; font-size: 14px; font-weight: bold;');

@@ -1,6 +1,6 @@
 # Polaroid Image Gallery
 Responsive Polaroid Image Gallery - is a simple image gallery.
-Currently it requires jQuery but in the future shall be with vanilla JavaScript.
+Currently it requires jQuery but in the future it shall be with vanilla/plain JavaScript.
 
 [View Example](https://hikwamehluli.github.io/Polaroid-Image-Gallery/)
 
