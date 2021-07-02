@@ -1,0 +1,14 @@
+{
+	"name": "polaroidimagegallery",
+	"version": "1.0.0",
+	"description": "Polaroid Image Gallery",
+	"scripts": {
+		"css-prod": "sass --no-source-map --watch scss/style.scss:css/app.css --style compressed",
+		"css-dev": "sass --no-source-map --watch scss/style.scss:css/app.css"
+	},
+	"author": "Hikwa Mehluli",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.34.1"
+	}
+}
