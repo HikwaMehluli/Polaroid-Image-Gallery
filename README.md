@@ -30,11 +30,15 @@ var imageGalleryData = [
         caption: "Image caption",
         photo: "../path-to-image"
     }
+    {
+        caption: "Image caption",
+        photo: "../path-to-image"
+    }
 ]
 ```
 
 ### Dependencies
-JQuery 2.1.3 [Download JQuery](http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js)
+JQuery [Download JQuery](https://code.jquery.com/)
 <br>
 Font family for polaroid caption - [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light)
 
