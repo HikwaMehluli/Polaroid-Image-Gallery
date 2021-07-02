@@ -9,12 +9,13 @@ function galleryTemplate(art) {
     </div>
   `;
 }
-document.getElementById("app").innerHTML = imageGalleryData.map(galleryTemplate).join("");
+document.getElementById("app").innerHTML = galleryData.map(galleryTemplate).join("")
 
 // Randomize polaroid images
 $('.polaroid').each(function () {
-    var depth = Math.floor(Math.random() * 100);
-    var rotate = Math.random() * 41 - 15;
+    const depth = Math.floor(Math.random() * 100);
+    const rotate = Math.random() * 41 - 15;
+    
     $(this).css({
         'z-index': depth,
         'transform': 'rotateZ(' + rotate + 'deg)'
@@ -22,4 +23,4 @@ $('.polaroid').each(function () {
 });
 
 // Credits
-console.log('%cPolaroid Image Gallery\n\nDeveloped by: Mehluli Hikwa\n\nInstagram - @thatafro', 'color: blue; font-size: 14px; font-weight: bold;');
+console.log('%cPolaroid Image Gallery\n\nDesign by: Mehluli Hikwa\n\nwww.thatafro.com', 'font-size: 14px; font-weight: bold;')

@@ -1,4 +1,5 @@
-var imageGalleryData = [{
+var galleryData = [
+	{
 		caption: "Chameleon",
 		photo: "https://res.cloudinary.com/thatafro/image/upload/v1551788727/36days_2018/36days_C_2018.jpg"
 	},
