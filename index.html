@@ -12,14 +12,17 @@
         <img src="./img/polaroid_logo.png" alt="Polaroid Image Gallery Logo">
     </header>
 
-    <div id="app"></div>
-
+    <div class="gallery-container">
+        <div id="app">
+            <!-- The gallery images will be rendered here by JavaScript -->
+        </div>
+    </div>
+    
     <footer>
-        <p>Polaroid Image Gallery &copy; 2023</p>
-        <p>Created by <a href="https://thatafro.netlify.app">Hikwa Mehluli</a></p>
+        <p>Polaroid Image Gallery &copy; 2023 - <script>document.write(new Date().getFullYear());</script> All Rights Reserved</p>
+        <p><a href="https://thatafro.netlify.app">Created by Hikwa Mehluli</a></p>
     </footer>
     
-    <!-- <script src="./js/images.json"></script> -->
     <script src="./js/polaroid-gallery.js"></script>
 </body>
 </html>

@@ -1,12 +1,10 @@
 // Placing of images into HTML
 function galleryTemplate(art) {
-        return `
-        <div class="gallery">
-            <figure class="polaroid">
-                <img src="${art.photo}">
-                <figcaption>${art.caption}</figcaption>
-            </figure>
-        </div>
+    return `
+        <figure class="polaroid">
+            <img src="${art.photo}">
+            <figcaption>${art.caption}</figcaption>
+        </figure>
     `;
 }
 
@@ -21,7 +19,7 @@ fetch('./api/images.json')
         // Randomize polaroid images (plain JavaScript)
         document.querySelectorAll('.polaroid').forEach(function (el) {
             const depth = Math.floor(Math.random() * 100);
-            const rotate = Math.random() * 41 - 15;
+            const rotate = Math.random() * 40 - 19;
             el.style.zIndex = depth;
             el.style.transform = 'rotateZ(' + rotate + 'deg)';
         });
