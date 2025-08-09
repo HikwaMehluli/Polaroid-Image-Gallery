@@ -1,25 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-// font-family: 'Shadows Into Light', cursive;
 
-*,
-*:before,
-*:after {
+// =========================
+// Variables
+// =========================
+$font-main: 'Shadows Into Light', cursive;
+$font-size-base: 62.5%;
+$color-bg: #f7f7f7;
+$color-polaroid-bg: rgb(252, 252, 252);
+$color-polaroid-hover-bg: rgb(3, 7, 20);
+$color-polaroid-caption: rgb(3, 7, 20);
+$color-polaroid-caption-hover: rgb(252, 252, 252);
+$box-shadow-polaroid: inset 0px 0px 50px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0, 0, 0, 0.25);
+$box-shadow-polaroid-hover: inset 0px 0px 50px rgba(0, 0, 0, 0.1), 0px 0px 29px rgba(0, 0, 0, 0.2);
+$border-radius: 3px;
+$transition-fast: all .1s ease-in;
+$max-width: 1200px;
+$img-max-width: 250px;
+$img-max-height: 250px;
+
+// =========================
+// Base Styles
+// =========================
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
 body {
-    background: #f7f7f7 url('../img/wood_texture.jpg');
-    // font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
+    background: $color-bg url('../img/wood_texture.jpg');
+    font-size: $font-size-base;
     overflow-x: hidden;
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: $max-width;
 }
 
 header {
     margin-bottom: 4%;
-
     img {
         display: block;
         margin-left: auto;
@@ -27,55 +44,50 @@ header {
     }
 }
 
-
-
-/**********************
-    Poloraid Code
-**********************/
+// =========================
+// Gallery & Polaroid
+// =========================
 .gallery {
     width: 90%;
-    max-width: 1200px;
+    max-width: $max-width;
     margin: 0 auto;
 
     .polaroid {
-        // width: 100%;
         position: relative;
-        background-color: rgb(252, 252, 252);
-        box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
-        0px 5px 10px rgba(0, 0, 0, 0.25);
+        background-color: $color-polaroid-bg;
+        box-shadow: $box-shadow-polaroid;
         float: left;
         margin: 0;
-        border-radius: 3px;
-        padding: 10px 10px 10px 10px;
-        transition: all .1s ease-in;
+        border-radius: $border-radius;
+        padding: 10px;
+        transition: $transition-fast;
         transform: translateZ(0);
-    
+
         &:hover {
-            background-color: rgb(3, 7, 20);
+            background-color: $color-polaroid-hover-bg;
             transform: rotateZ(0deg) scale(1.3) !important;
             z-index: 300 !important;
-
             figcaption {
-                color: rgb(252, 252, 252);
+                color: $color-polaroid-caption-hover;
             }
         }
 
         a {
             text-decoration: none;
         }
-    
+
         img {
             width: 100%;
             height: auto;
-            max-width: 250px;
-            max-height: 250px;
+            max-width: $img-max-width;
+            max-height: $img-max-height;
             position: relative;
         }
-    
+
         figcaption {
-            color: rgb(3, 7, 20);
+            color: $color-polaroid-caption;
             margin-top: 10px;
-            font-family: "Shadows Into Light", cursive;
+            font-family: $font-main;
             font-size: 24px;
             font-weight: bold;
             line-height: 1;
@@ -84,46 +96,46 @@ header {
     }
 }
 
+// =========================
+// Responsive
+// =========================
+@media screen and (max-width: 400px) {
+    .polaroid {
+        width: 90%;
+        transform: rotateZ(0deg) !important;
+        margin: 20px auto 0 auto;
+        float: none;
+    }
+}
 
+@media screen and (min-width: 401px) {
+    .polaroid:hover {
+        transform: rotateZ(0deg) scale(1.2) !important;
+        z-index: 300 !important;
+        box-shadow: $box-shadow-polaroid-hover;
+    }
+}
 
-// @media screen and (max-width: 400px) {
-//     .polaroid {
-//         width: 90%;
-//         transform: rotateZ(0deg) !important;
-//         margin: 20px auto 0 auto;
-//         float: none;
-//     }
-// }
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .polaroid {
+        width: 50%;
+    }
+}
 
-// @media screen and (min-width: 401px) {
-//     .polaroid:hover {
-//         transform: rotateZ(0deg) scale(1.2) !important;
-//         z-index: 300 !important;
-//         box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
-//         0px 0px 29px rgba(0, 0, 0, 0.2);
-//     }
-// }
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .polaroid {
+        width: 33.3333%;
+    }
+}
 
-// @media screen and (min-width: 401px) and (max-width: 600px) {
-//     .polaroid {
-//         width: 50%;
-//     }
-// }
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .polaroid {
+        width: 25%;
+    }
+}
 
-// @media screen and (min-width: 601px) and (max-width: 800px) {
-//     .polaroid {
-//         width: 33.3333%;
-//     }
-// }
-
-// @media screen and (min-width: 801px) and (max-width: 1000px) {
-//     .polaroid {
-//         width: 25%;
-//     }
-// }
-
-// @media screen and (min-width: 1001px) {
-//     .polaroid {
-//         width: 20%;
-//     }
-// }
+@media screen and (min-width: 1001px) {
+    .polaroid {
+        width: 20%;
+    }
+}
